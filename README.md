@@ -1,68 +1,106 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Example Character JSON
 
-## Available Scripts
+```json
+{
+    "name": "Edleguard",
+    "full_name": "Edelgard von Hresvelg",
+    "crest": [
+        // NEED TO CHECK CRESTS FOR SPOILER WARNINGS
+        {
+            "name": "Minor Crest of Seiros",
+            "description": "Legend has it that Saint Seiros bore this Crest and passed it down through House Hresvelg",
+            "abilities": "Occasionally raises Mt when using combat arts"
+        }
+        ,
+        {
+            "name": "Major Crest of Flames",
+            "description": "The Crest of the goddess who governs the world",
+            "abilities": "Occasionally restores HP equal to 30% of damage dealt. Rarely raises Mt and stops counterattacks"
+        }
+    ],
+    "age": 17,
+    "height": "158 cm",
+    "birthday": "06/22",
+    "stats": {
+        "base": {
+            "hp": 29,
+            "str": 13,
+            "mag": 6,
+            "dex": 5,
+            "spd": 8,
+            "luck": 5,
+            "def": 6,
+            "res": 4,
+            "cha": 10
+        },
 
-In the project directory, you can run:
+        "max": {
+            "hp": 29,
+            "str": 13,
+            "mag": 6,
+            "dex": 5,
+            "spd": 8,
+            "luck": 5,
+            "def": 6,
+            "res": 4,
+            "cha": 10
 
-### `npm start`
+        },
+        "growth_rate": {
+            // as a %
+            "hp": 40,
+            "str": 55,
+            "mag": 45,
+            "dex": 45,
+            "spd": 40,
+            "luck": 30,
+            "def": 35,
+            "res": 35,
+            "cha": 60
+        },
+        "proficiencies": {
+            "strengths": ["Sword", "Axe", "Authority", "Heavy Armor"],
+            "weaknesses": ["Bow", "Faith"],
+            "budding_talent": {
+                "skill":"Reason",
+                "name": "Black Magic Crit +10",
+                "effect": "Grants Crit +10 when using black magic"
+            }
+        }
+    },
+    "house": "Black Eagles",
+    "country_of_origin": "Empire",
+    "personal_skill": {
+        "Imperial Lineage": "+20% experience is earned by unit"
+    },
+    "gifts": {
+        "like": ["Carnation", "Armored Bear Stuffy", "Monarch Studies Book", "Board Game"],
+        "dislike": ["Goddess Statuette", "Ceremonial Sword"],
+        "lost_items": ["White Glove", "Time-worn Quill Pen", "Eastern Porcelain"]
+    },
+    "biography": "Full name Edelgard von Hresvelg. The imperial princess of the Adrestian Empire–a mighty nation with a rich history–and its next emperor. Within the Black Eagles, she’s the house leader. She has an extremely noble and dignified air to her, and is able to calmly assess and act upon the situation and the people around her.",
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+}
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Calendar
 
-### `npm run build`
+```json
+[
+    "Guardian Moon"
+    "Pegasus Moon"
+    "Lone Moon"
+    "Great Tree Moon"
+    "Harpstring Moon"
+    "Garland Moon"
+    "Blue Sea Moon"
+    "Verdant Rain Moon"
+    "Horsebow Moon"
+    "Wyvern Moon"
+    "Red Wolf Moon"
+    "Ethereal Moon"
+]
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
