@@ -2,8 +2,9 @@ import React from 'react';
 import axios from 'axios';
 import './character.scss';
 import SkillsTable from './Skills/SkillsTable';
-import Crest from './Crest/Crest';
 import CrestContainer from './Crest/CrestContainer';
+import Stats from './Stats/Stats';
+import Gifts from './Gifts/Gifts';
 
 class Character extends React.Component {
     constructor(){
@@ -41,7 +42,7 @@ class Character extends React.Component {
         }
 
         console.log(this.state.character);
-        const { growth_rate: growthRate, base, max, proficiencies }= stats;
+        const { proficiencies }= stats;
 
         // Setting up dynamic background for houses
         let imgurl = house.toLowerCase().split(' ').join('-');
@@ -86,30 +87,10 @@ class Character extends React.Component {
                         <h2>{personalSkill.effect}</h2>
                     </div>
 
-                    <div className='character__details-stats'>
-                        <table>
-                            <thead>
-                            <tr>
-                                <th className='w'>Stats</th>
-                                <td>HP</td>
-                                <td>STR</td>
-                                <td>DEX</td>
-                                <td>MAG</td>
-                                <td>SPD</td>
-                                <td>LUCK</td>
-                                <td>DEF</td>
-                                <td>RES</td>
-                                <td>CHA</td>
-                            </tr>
-                            </thead>
-                            <tbody>
-                                <TableRow rowTitle='Growth Rate' rowObject={growthRate}  />
-                                <TableRow rowTitle='Base Stats' rowObject={base} />
-                                <TableRow rowTitle='Max Stats' rowObject={max} />
-                            </tbody>
-                        </table>
-                    </div>
+                    <Stats {...stats}/>
                     <div className='character__details-items'></div>
+
+                    <Gifts {...gifts}/>
                 </section>
 
             </div>
@@ -118,19 +99,6 @@ class Character extends React.Component {
 };
 
 export default Character;
-
-
-// Helper components
-function TableRow({rowTitle, rowObject}) {
-    let stats = ['hp','str','dex','mag','spd','luck','def','res','cha']
-    return (
-        <tr>
-        <th>{rowTitle}</th>
-        { stats.map(stat => <td key={`${rowTitle}-${stat}`}>{rowObject[stat]}</td>) }
-        </tr>
-    )
-
-}
 
 function InfoItemBox({label, value}) {
     return (
