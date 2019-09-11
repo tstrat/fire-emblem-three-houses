@@ -78,9 +78,7 @@
         "dislike": ["Goddess Statuette", "Ceremonial Sword"],
         "lost_items": ["White Glove", "Time-worn Quill Pen", "Eastern Porcelain"]
     },
-    "biography": "Full name Edelgard von Hresvelg. The imperial princess of the Adrestian Empire–a mighty nation with a rich history–and its next emperor. Within the Black Eagles, she’s the house leader. She has an extremely noble and dignified air to her, and is able to calmly assess and act upon the situation and the people around her.",
-
-
+    "biography": "Full name Edelgard von Hresvelg. The imperial princess of the Adrestian Empire–a mighty nation with a rich history–and its next emperor. Within the Black Eagles, she’s the house leader. She has an extremely noble and dignified air to her, and is able to calmly assess and act upon the situation and the people around her."
 }
 
 ```
