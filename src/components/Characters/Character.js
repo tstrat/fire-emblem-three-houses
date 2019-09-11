@@ -25,6 +25,7 @@ class Character extends React.Component {
             name,
             full_name: fullName,
             age,
+            height,
             birthday,
             biography,
             nationality,
@@ -63,6 +64,7 @@ class Character extends React.Component {
                         <tbody>
                         <InfoItemBox label='Full Name' value={fullName}/>
                         <InfoItemBox label='Age' value={age}/>
+                        <InfoItemBox label='Height' value={height}/>
                         <InfoItemBox label='Birthday' value={birthday}/>
                         <InfoItemBox label='Nationality' value={nationality}/>
                         <InfoItemBox label='House / Faction' value={house}/>
@@ -100,6 +102,8 @@ class Character extends React.Component {
 
 export default Character;
 
+
+// Helper component
 function InfoItemBox({label, value}) {
     return (
         <tr className='character__info-box'>
