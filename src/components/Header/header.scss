@@ -1,5 +1,8 @@
 .header {
-    height: 70px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid white;
+    background: black;
+    .container {
+        height: 70px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid white;
+    }
 }

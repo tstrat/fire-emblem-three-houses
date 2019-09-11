@@ -1,19 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 $desktop-width: 768px;
+
 .title {
-    margin: 0 auto;
-    width: 90%;
+    margin: 30px auto;
+    width: 100%;
     min-width: $desktop-width;
-    background-image: url('../../media/title-background.jpg');
+    background-image: url('../../media/title/title-background.jpg');
     background-position: 0px 0px;
-	// background-repeat: repeat-x;
     background-size: cover;
-    // background-size: cover;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2%;
-    animation: animatedBackground 5s forwards ease-out;
+    position: relative;
+
+    animation: animatedBackground 2s forwards ease-out;
 
     img {
         height: 150px;
@@ -21,22 +24,28 @@ $desktop-width: 768px;
         min-width: 100%;
         margin-bottom: 20px;
     }
-    &--text {
+    &__text {
+        bottom: 10px;
+        right: 20px;
+        position: absolute;
         height: 100%;
+        max-height: fit-content;
         min-width: 375px;
         width: 40%;
-        background-image: url('../../media/old-paper.jpg');
+        background-image: url('../../media/title/old-paper.jpg');
         background-size: 100% 100%;
         align-self: flex-end;
         padding: 5%;
 
-        display: flex;
+        font-family: 'Gabriola', 'Roboto', sans-serif;
+
+        display: none;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
 
-
-        &--header1 {
+        animation: animateCard 2s forwards ease;
+        &-header1 {
             font-size: 4.0rem;
         }
         p {
@@ -50,13 +59,33 @@ $desktop-width: 768px;
 
 }
 
+.hidden {
+    animation: animateCard 2s forwards ease;
+    display: flex;
+}
+
 @keyframes animatedBackground {
     from {
-        background-position: 0 0%;
-        // transform: scale(1.2)
+        // background-position: 0 0%;
+        transform: scale(1.2);
+        opacity: 0;
     }
     to {
-        background-position: 0% 20%;
-        // transform: scale(1)
+        // background-position: 0% 20%;
+        transform: scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes animateCard {
+    from {
+        right: -300px;
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    to {
+        right: 30px;
+        transform: scale(1);
+        opacity:1;
     }
 }
