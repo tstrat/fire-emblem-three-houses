@@ -7,20 +7,31 @@ import Stats from './Stats/Stats';
 import Gifts from './Gifts/Gifts';
 
 class Character extends React.Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state= {
             character: {}
         }
     }
 
     componentDidMount() {
-        axios.get('/api/v1/characters').then(res => {
+        axios.get(`/api/v1/characters/${this.props.character}`).then(res => {
             this.setState({ character: res.data[0]})
-        })
+        }).catch(err => console.log(err))
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.character !== this.props.character) {
+            axios.get(`/api/v1/characters/${this.props.character}`).then(res => {
+                this.setState({ character: res.data[0]})
+            }).catch(err => console.log(err))
+        }
     }
 
     render() {
+        if (!this.state.character) {
+            return <div className='character'>Empty</div>
+        }
         const {
             name,
             full_name: fullName,
@@ -42,7 +53,6 @@ class Character extends React.Component {
             return <></>
         }
 
-        console.log(this.state.character);
         const { proficiencies }= stats;
 
         // Setting up dynamic background for houses

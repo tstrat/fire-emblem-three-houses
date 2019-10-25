@@ -1,0 +1,44 @@
+{
+    "content": {
+        "name":"Ferdinand",
+        "full_name":"Ferdinand von Aegir",
+        "crests":[{
+            "name": "Minor Crest of Cichol",
+            "description": "Legend has it that Saint Cichol bore this Crest. A symbol of strength and the land.",
+            "abilities": "Sometimes lets combat arts prevent enemy counterattacks"
+        }],
+        "age":17,
+        "height":"175 cm",
+        "birthday":"04/30",
+        "stats":{
+            "base":{"hp":28,"str":8,"mag":5,"dex":6,"spd":8,"luck":6,"def":6,"res":2,"cha":7},
+            "max":{"hp":93,"str":64,"mag":40,"dex":56,"spd":70,"luck":56,"def":49,"res":36,"cha":57},
+            "growth_rate":{"hp":50,"str":45,"mag":20,"dex":40,"spd":50,"luck":40,"def":35,"res":20,"cha":40},
+            "proficiencies":{
+                "strengths":["Sword", "Lance","Axe","Riding"],
+                "weaknesses":[],
+                "budding_talent":{
+                    "skill":"Heavy Armor",
+                    "name":"Seal Speed",
+                    "effect":"If unit damages foe during combat, foe suffers Spd -6 for 1 turn after combat"
+                }
+            }
+        },
+        "house":"Black Eagles",
+        "nationality":"Adrestian Empire",
+        "personal_skill":{ 
+            "name": "Confidence", 
+            "effect": "When HP is full, unit gains +15 Hit and Avoid"
+            
+        },
+        "gifts":{
+            "like":["Riding Boots", "Whetstone", "Tea Leaves"],
+            "dislike":["Blue Cheese", "Coffee Beans"],
+            "lost_items":["Maintenance Oil", "Agricultural Survey", "Bag of Tea Leaves"]
+        },
+        "biography":"Full name Ferdinand von Aegir. The heir of Duke Aegir’s family–a renowned family where the title of imperial chancellor is passed down. He’s very proud of his own family because of its importance and influence. Extremely confident and hates to lose. Princess Edelgard’s brilliance ignites a sense of rivalry within him.",
+        "noble":true
+    
+    }
+}
+

@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import Title from './components/Title/Title';
 import Header from './components/Header/Header';
-import Character from './components/Characters/Character';
+// import Character from './components/Characters/Character';
+import CharacterSelect from './components/CharacterSelect/CharacterSelect';
 
 
 function App() {
@@ -10,9 +11,9 @@ function App() {
     <div className="App">
       <Header/>
       <div className='container'>
-
         <Title />
-        <Character />
+        <CharacterSelect/>
+        {/* <Character /> */}
       </div>
     </div>
   );

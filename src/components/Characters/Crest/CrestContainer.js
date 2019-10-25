@@ -11,7 +11,6 @@ function CrestContainer({crests}) {
         )
     }
 
-    console.log(selected);
     const crestsMap = crests.map(crest => (
         <Crest select={() => setSelected(crest)} selected={selected.name === crest.name} {...crest} key={crest.name}/>
     ))

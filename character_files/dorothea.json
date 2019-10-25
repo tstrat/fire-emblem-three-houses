@@ -1,0 +1,40 @@
+{
+    "content": {
+        "name":"Dorothea",
+        "full_name":"Dorothea Arnault",
+        "crests":[],
+        "age":18,
+        "height":"170 cm",
+        "birthday":"09/29",
+        "stats":{
+            "base":{"hp":24,"str":5,"mag":11,"dex":6,"spd":7,"luck":6,"def":4,"res":7,"cha":8},
+            "max":{"hp":76,"str":30,"mag":61,"dex":62,"spd":57,"luck":49,"def":38,"res":50,"cha":58},
+            "growth_rate":{"hp":40,"str":20,"mag":40,"dex":45,"spd":40,"luck":35,"def":15,"res":35,"cha":40},
+            "proficiencies":{
+                "strengths":["Sword", "Reason"],
+                "weaknesses":["Axe","Faith"],
+                "budding_talent":{
+                    "skill":"Faith",
+                    "name":"White Magic Avoid + 20",
+                    "effect":"Grants Avo +20 when using white magic."
+                }
+            }
+        },
+        "house":"Black Eagles",
+        "nationality":"Adrestian Empire",
+        "personal_skill":{ 
+            "name": "Songstress", 
+            "effect": "At the start of each turn, restores adjacent allies’ HP by 10%."
+            
+        },
+        "gifts":{
+            "like":["Book of Sheet Music", "Gemstone Beads", "Stylish Hair Clip"],
+            "dislike":["Goddess Statuette", "Floral Adornment"],
+            "lost_items":["Silver Brooch", "Songstress Poster", "Lovely Comb"]
+        },
+        "biography":"Full name Dorothea Arnault. A female student who was a popular songstress in the imperial capital before she enrolled. She admires Manuela, who came from the same Mittelfrank opera company, as her senior. Within the Black Eagles, she’s the only commoner, which makes her feel uneasy, but she treats all of her similarly aged friends as equals.",
+        "noble":false
+    
+    }
+}
+

@@ -1,0 +1,40 @@
+{
+    "content": {
+        "name":"Hubert",
+        "full_name":"Hubert von Vestra",
+        "crests":[],
+        "age":19,
+        "height":"188 cm",
+        "birthday":"17/04",
+        "stats":{
+            "base":{"hp":22,"str":6,"mag":12,"dex":6,"spd":7,"luck":6,"def":4,"res":7,"cha":6},
+            "max":{"hp":67,"str":43,"mag":80,"dex":62,"spd":63,"luck":51,"def":45,"res":57,"cha":49},
+            "growth_rate":{"hp":35,"str":30,"mag":55,"dex":45,"spd":45,"luck":35,"def":25,"res":40,"cha":35},
+            "proficiencies":{
+                "strengths":["Bow, Reason, Authority"],
+                "weaknesses":["Axe","Faith"],
+                "budding_talent":{
+                    "skill":"Lance",
+                    "name":"Frozen Lance",
+                    "effect":"A magic attack. Mt increases based on unit’s Dex."
+                }
+            }
+        },
+        "house":"Black Eagles",
+        "nationality":"Adrestian Empire",
+        "personal_skill":{ 
+            "name": "Officer Duty", 
+            "effect": "Boost Gambit Might by 5"
+            
+        },
+        "gifts":{
+            "like":["Coffee Beans", "Board Game", "The History of Fodlan"],
+            "dislike":["Legends of Chivalry", "Gemstone Beads", "Landscape Painting"],
+            "lost_items":["Hresvelg Treatise", "Noxious Handkerchief", "Folding Razor"]
+        },
+        "biography":"Full name Hubert von Vestra. The strategist of the Black Eagles. He’s the heir of Marquis Vestra’s family and has served Edelgard from a young age. He’ll use any means necessary to eliminate her obstacles. According to Edelgard, he’s a cold, but reasonable person.", 
+        "noble":true
+    
+    }
+}
+

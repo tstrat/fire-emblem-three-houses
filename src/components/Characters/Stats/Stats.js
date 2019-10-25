@@ -9,7 +9,7 @@ function Stats({ growth_rate, base, max }) {
             <thead>
                 <tr>
                     <th className='w'>Stats</th>
-                    {stats.map(stat => <th>{stat.toUpperCase()}</th>)}
+                    {stats.map((stat, i) => <th key={i}>{stat.toUpperCase()}</th>)}
                 </tr>
             </thead>
             <tbody>

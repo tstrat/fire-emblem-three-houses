@@ -1,0 +1,18 @@
+.character-select {
+    &__house {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        &__character {
+            width: 100px;
+            &:hover {
+                transform: scale(1.2);
+            }
+            &.selected {
+                border: 1px solid gold;
+            }
+        }
+    }
+
+
+}

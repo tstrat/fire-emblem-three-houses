@@ -13,10 +13,9 @@ function Gifts({like, dislike, lost_items}) {
         <div className='gifts'>
             <h1>Items</h1>
             <div>
-
-                <h1 onClick={() => setView(0)}>Liked</h1>
-                <h1 onClick={() => setView(1)}>Disliked</h1>
-                <h1 onClick={() => setView(2)}>Lost</h1>
+                <h1 className={view === 0 ? 'active' : ''} onClick={() => setView(0)}>Liked</h1>
+                <h1 className={view === 1 ? 'active' : ''} onClick={() => setView(1)}>Disliked</h1>
+                <h1 className={view === 2 ? 'active' : ''} onClick={() => setView(2)}>Lost</h1>
             </div>
             <ul>{itemList}</ul>
         </div>

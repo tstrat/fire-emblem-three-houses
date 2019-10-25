@@ -11,14 +11,14 @@ module.exports = {
     },
     getCharacter: async (req, res) => {
         const { name } = req.params;
-        var nameRegex = new RegExp(name);
-        const character = await Character.find({name: { $regex: nameRegex, options:'i'}})
+        console.log(name);
+        const character = await Character.find({name: new RegExp(name, 'i')})
 
         res.status(200).send(character);
     },
     updateCharacter: async (req, res) => {
         const { content } = req.body; // for auth later attach middleware
-        const ch =  await Character.replaceOne({name: 'Edleguard'}, content)
+        const ch =  await Character.replaceOne({name: content.name}, content)
         res.status(200).send({ status: 'updated', content: ch})
     },
     addCharacter: (req, res) => {
